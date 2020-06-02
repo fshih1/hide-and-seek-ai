@@ -26,6 +26,7 @@
     "colors": "^1.4.0",
     "dimensions-ai": "^3.1.1",
     "seedrandom": "^3.0.5",
+    "typescript": "^3.9.3",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
