@@ -71,7 +71,7 @@ class Agent:
     User should edit this according to their `Design`
     """
     def __init__(self):
-        
+        self.agent = self.initialize()
 
     """
     Initialize Agent for the `Match`
@@ -83,7 +83,6 @@ class Agent:
         self.team = Team(int(meta[1]))
 
         self._store_unit_info()
-
 
         [width, height] = [int(i) for i in (read_input().split(","))]
         self.map = []
@@ -128,6 +127,8 @@ class Agent:
                 self.units.append(Unit(id, x, y, dist))
 
         units_and_coords = read_input().split(",")
+
+
 
         self.opposingUnits = []
         for _, value in enumerate(units_and_coords):
